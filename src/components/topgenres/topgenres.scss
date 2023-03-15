@@ -1,0 +1,96 @@
+@import "../../breakpoints/breakpoints.scss";
+
+.topgenres {
+    background-color: rebeccapurple;
+    color: white;
+
+    .subheading {
+        width: 33%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+        padding-bottom: 10px;
+        font-size: 18px;
+
+        @include media("<=phone") {
+            width: 80%;
+            font-size: 13px;
+        }
+
+        @include media(">phone", "<=longphone") {
+            width: 80%;
+            font-size: 13px;
+        }
+
+        @include media(">longphone", "<=tablet") {
+            width: 80%;
+            margin-top: 25px;
+        }
+
+        @include media(">tablet", "<=halfscreen") {
+            width: 60%;
+            margin-top: 25px;
+            font-size: 23px;
+        }
+
+    }
+    .container {
+        width: 33%;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include media("<=phone") {
+            width: 80%;
+            font-size: 11px;
+        }
+
+        @include media(">phone", "<=longphone") {
+            width: 80%;
+            font-size: 13px;
+            margin-top: 40px;
+        }
+
+        @include media(">longphone", "<=tablet") {
+            width: 80%;
+            font-size: 15px;
+            margin-top: 30px;
+        }
+
+        @include media(">tablet", "<=halfscreen") {
+            width: 60%;
+            font-size: 15px;
+            margin-top: 30px;
+        }
+
+        .genreContainer {
+            font-weight: normal;
+            background-color: lightcoral;
+            border-radius: 10px;
+            padding-left: 15px;
+            padding-right: 5px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-bottom: 5px;
+        }
+        
+        .otherContainer {
+            background-color: lightcoral;
+            border-radius: 10px;
+            padding-left: 15px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin-bottom: 5px;
+
+            @include media("<=phone") {
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+        }
+    }
+    h1 {
+        text-align: center;
+        width: 100%;
+        display: inline-block;
+    }
+}

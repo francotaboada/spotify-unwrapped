@@ -1,0 +1,262 @@
+@import "../../breakpoints/breakpoints.scss";
+
+.toptracks {
+    background-color: rgb(104, 207, 173);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    color: white;
+    
+    @include media("<=phone") {
+        overflow-y: hidden;
+    }
+
+    .container {
+        -moz-column-count: 5;
+        -webkit-column-count: 5;
+        text-align: center;
+        column-count: 5;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include media("<=phone") {
+            -moz-column-count: 4;
+            -webkit-column-count: 4;
+            column-count: 4;
+            column-gap: 50px;
+            width: 80%;
+            margin-left: 20px;
+        }
+
+        @include media(">phone", "<=longphone") {
+            -moz-column-count: 4;
+            -webkit-column-count: 4;
+            column-count: 4;
+            width: 80%;
+            margin-top: 25px;
+        }
+
+        @include media(">longphone", "<=tablet") {
+            -moz-column-count: 4;
+            -webkit-column-count: 4;
+            column-count: 4;
+            width: 80%;
+            margin-top: 0px;
+        }
+
+        @include media(">tablet", "<=halfscreen") {
+            -moz-column-count: 4;
+            -webkit-column-count: 4;
+            column-count: 4;
+            width: 80%;
+            margin-top: 15px;
+            height: auto;
+        }
+
+        .imgContainer {
+            float: left;
+            margin-left: -2px;
+            overflow: hidden;
+            width: 100%;
+            height: 150px;
+            color: white;
+            overflow: visible;
+            position: relative;
+
+            @include media("<=phone") {
+                height: 100px;
+                overflow:visible;
+                left: 0;
+                margin-left: -5px;
+                margin-top: 3px;
+            }
+
+            @include media(">phone", "<=longphone") {
+                height: 100px;
+                overflow:visible;
+                left: 0;
+                margin-left: -5px;
+                margin-top: 3px;
+            }
+
+            @include media(">longphone", "<=tablet") {
+                height: 100px;
+                overflow:visible;
+                left: 0;
+                margin-top: 35px;
+            }
+
+            @include media(">tablet", "<=halfscreen") {
+                height: 160px;
+                overflow:visible;
+                left: 0;
+                margin-top: 5px;
+            }
+
+            .album-cover {
+                box-shadow: 10px 5px 8px 0 rgba(0, 0, 0, 0.5);
+                width: 110px;
+                height: 110px;
+                object-fit: cover;
+
+                @include media("<=phone") {
+                    height: 80px;
+                    width: 80px;
+                }
+
+                @include media(">phone", "<=longphone") {
+                    height: 80px;
+                    width: 80px;
+                }
+
+                @include media(">longphone", "<=tablet") {
+                    height: 100px;
+                    width: 100px;
+                    
+                }
+                @include media(">tablet", "<=halfscreen") {
+                    height: 120px;
+                    width: 120px;
+                }
+            }
+
+            .album-cover:hover {
+                transform: scale(1.3);
+                transform-origin: 50% 50%;
+                transition: transform 0.4s;
+                cursor: pointer;
+            }
+
+            .album-cover:not(:hover) {
+                transform: scale(1);
+                transition: transform 0.4s;
+            }
+
+            figcaption {
+                width: 120px;
+                margin-left: auto;
+                margin-right: auto;
+
+                text-overflow: ellipsis;
+
+                @include media("<=phone") {
+                    width: 80px;
+                }
+
+                @include media(">phone", "<=longphone") {
+                    width: 80px;
+                }
+
+                @include media(">longphone", "<=tablet") {
+                    margin-bottom: 10px;
+                }
+
+                .songname {
+                    font-size: 13px;
+                    font-weight: bold;
+                    display: -webkit-box !important;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    white-space: normal;
+                    overflow: hidden;
+                    word-wrap: break-word;
+
+                    @include media("<=phone") {
+                        font-size: 8px;
+                    }
+                    @include media(">phone", "<=longphone") {
+                        font-size: 9px;
+                    }
+                    @include media(">tablet", "<=halfscreen") {
+                        font-size: 14px;
+                    }
+                }
+
+                .artistname {
+                    font-size: 10px;
+
+                    @include media("<=phone") {
+                        font-size: 8px;
+                    }
+                    @include media(">phone", "<=longphone") {
+                        font-size: 9px;
+                    }
+
+                    @include media(">longphone", "<=tablet") {
+                        margin-bottom: 10px;
+                    }
+                    @include media(">tablet", "<=halfscreen") {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+
+    @include media("<=smallphone") {
+        .container figure:nth-child(n+17) {
+            display: none;
+        }
+    }
+
+    @include media(">smallphone", "<=phone") {
+        .container figure:nth-child(n+21) {
+            display: none;
+        }
+    }
+
+    @include media(">phone", "<=longphone") {
+        .container figure:nth-child(n+23) {
+            display: none;
+        }
+    }
+
+    .options {
+        text-align: center;
+        width: 100%;
+        align-items: center;
+        display: inline-block;
+
+        @include media("<=phone") {
+            margin-left: -20px;
+            margin-top: -25px;
+        }
+
+        @include media(">phone", "<=longphone") {
+            margin-top: -20px;
+        }
+
+        .terms * {
+            display: inline;
+            justify-content: center;
+            white-space:nowrap;
+            margin-right: 50px;
+            font-size: 15px;
+            padding: 10px;
+            border-radius: 20px;
+            cursor: pointer;
+            columns: 3;
+
+            @include media("<=phone") {
+                font-size: 12px;
+                padding: 10px;
+                margin-right: 10px;
+            }
+
+            @include media(">phone", "<=longphone") {
+                font-size: 13px;
+                padding: 10px;
+                margin-left: -20px;
+                margin-right: 20px;
+            }
+
+            &.active {
+                background-color: rgb(33, 156, 150);
+                color: white;
+            }
+        }
+    }
+    h1 {
+        text-align: center;
+    }
+}

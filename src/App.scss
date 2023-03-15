@@ -1,0 +1,62 @@
+.App {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  height: 100vh;
+  background-color: #191414;
+  width: 100%;
+  overflow-x: hidden;
+
+  .login {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+
+  .sections {
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-color: lightsalmon;
+    position: relative;
+    top: 70px;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none; //for firefox
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    > * {
+      width: 100vw;
+      height: calc(100vh - 70px);
+      scroll-snap-align: start;
+    }
+  }
+}
+.button-container {
+  margin-bottom: 5px; 
+  .button {
+    background: #1DB954;
+    padding: 8px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 15px;
+    &:hover {
+      background: darken(#1DB954, 8%);
+      transition: all 0.3s ease;
+    }
+  }
+}
+
+
+.App-link {
+  color: #61dafb;
+}
