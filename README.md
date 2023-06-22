@@ -9,12 +9,12 @@ react setup, spotify api setup
 ## Technology Stack
 
 ### Technology Used
-[![My Skills](https://skillicons.dev/icons?i=react)]![amplify](https://github.com/francotaboada/spotify-unwrapped/assets/18605940/754e414d-662e-4b0a-a6a3-ab76d0b8dc60)
+![My Skills](https://skillicons.dev/icons?i=react) <img src="https://github.com/francotaboada/spotify-unwrapped/assets/18605940/754e414d-662e-4b0a-a6a3-ab76d0b8dc60" alt="amplify" width="48px" height="48px">
 - ReactJS for UI
 - AWS Amplify for deployment
 
 ### Languages Used
-[![My Skills](https://skillicons.dev/icons?i=js,html,sass,css)]
+![My Skills](https://skillicons.dev/icons?i=js,html,sass,css)
 - JavaScript
 - HTML
 - SASS/CSS
