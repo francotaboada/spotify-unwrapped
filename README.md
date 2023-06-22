@@ -1,10 +1,17 @@
 # Spotify Unwrapped
 
 Using a web app developed in ReactJS to display the short-term, medium-term, and long-term artists, tracks, and genres.
-## Technology Used
+
+## Project Setup
+[todo]
+react setup, spotify api setup
+
+## Technology Stack
+
+### Technology Used
 - ReactJS for UI
 - AWS Amplify for deployment
-## Languages Used
+### Languages Used
 - JavaScript
 - HTML
 - SASS/CSS
