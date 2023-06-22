@@ -12,7 +12,7 @@ function App() {
 
 	const CLIENT_ID = process.env.REACT_APP_SPOTIFY_API_ID; // Your client id
 	const CLIENT_SECRET = process.env.REACT_APP_SPOTIFY_CLIENT_SECRET; // Your secret
-	const REDIRECT_URI = "http://localhost:3000" //http://localhost:3000 for local instance
+	const REDIRECT_URI = "https://master.d20cfdv407epjr.amplifyapp.com" //http://localhost:3000 for local instance
 	const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize"
 	const RESPONSE_TYPE = "token"
 	const SCOPE_TYPE = "user-top-read%20user-read-private"
