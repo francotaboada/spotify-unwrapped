@@ -7,7 +7,7 @@ export default function Intro(props) {
         <div className='intro'>
             <div className="left">
                 <div className="imgContainer">
-                    <img alt="" src={props.userData.images[0].url} />
+                    <img alt="Profile Picture" src={props.userData.images[0].url} onerror="this.onerror=null; this.src='assets/userimage.png"/>
                 </div>
             </div>
             <div className="right">
