@@ -52,6 +52,7 @@
             outline: solid;
             outline-width: 5px;
             outline-color: #1db954;
+            object-fit: cover;
 
             @include media("<=phone") {
                 width: 145px;

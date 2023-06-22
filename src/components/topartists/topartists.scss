@@ -197,81 +197,6 @@
                     background-color: rgb(197, 143, 152);
                 }
 
-                .overlay {
-                    position: absolute;
-                    top: 0;
-                    bottom: 0;
-                    left: 0;
-                    right:0;
-                    height: 100%;
-                    width: 90px;
-                    opacity: 0;
-                    transition: 0.5s ease;
-                    background-color: #453946;
-                    font-size: 70px;
-
-                    @include media("<=smallphone") {
-                        width: 50px;
-                        height: 50px;
-                        font-size: 25px;
-                        margin-left: 15px;
-                        opacity: 1;
-                        background-color: transparent;
-                    }
-
-                    @include media(">smallphone", "<=phone") {
-                        width: 70px;
-                        height: 70px;
-                        font-size: 40px;
-                    }
-
-                    @include media(">phone", "<=longphone") {
-                        width: 70px;
-                        height: 70px;
-                        font-size: 45px;
-                    }
-
-                    @include media(">longphone", "<=tablet") {
-                        width: 60px;
-                        height: 60px;
-                    }
-
-                    @include media(">tablet", "<=halfscreen") {
-                        width: 70px;
-                        height: 70px;
-                    }
-
-                    @include media(">halfscreen", "<=desktop") {
-                        width: 90px;
-                        height: 90px;
-                    }
-                    
-                    @include media(">desktop") {
-                        
-                    }
-                    .index {
-                        color: white;
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        -webkit-transform: translate(-50%, -50%);
-                        -ms-transform: translate(-50%, -50%);
-                        transform: translate(-50%, -50%);
-                        text-align: center;
-
-                        @include media("<=smallphone") {
-                        width: 50px;
-                        height: 50px;
-                        }
-
-                        
-                    }
-                }
-
-                .overlay:hover {
-                    opacity: .75;
-                    
-                }
 
                 figcaption {
                     font-size: 30px;
@@ -360,6 +285,14 @@
 
                         @include media(">tablet", "<=halfscreen") {
                             font-size: 17px;
+                            margin-left: 5px;
+                            width: 150px;
+                            height: 60px;
+                        }
+
+                        @include media(">halfscreen") {
+                            margin-top: 20px;
+                            font-size: 22px;
                             margin-left: 5px;
                             width: 150px;
                             height: 60px;

@@ -64,9 +64,6 @@ export default function TopArtists(props) {
                   alt={d.name}
                   src={d.images[0].url}
                 />
-                <div className="overlay">
-                  <div className="index">{index + 1}</div>
-                </div>
                 <figcaption onClick={() => window.open(d.uri)}>
                   <div className="artisttext">{d.name}</div>
                 </figcaption>
