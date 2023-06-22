@@ -26,7 +26,7 @@ function App() {
 	const TOPARTISTSMT_ENDPOINT = "https://api.spotify.com/v1/me/top/artists?time_range=medium_term&limit=50"
 	const TOPARTISTSLT_ENDPOINT = "https://api.spotify.com/v1/me/top/artists?time_range=long_term&limit=50"
 
-	const AUDIOFEATURES_ENDPOINT = "https://api.spotify.com/v1/audio-features"
+//	const AUDIOFEATURES_ENDPOINT = "https://api.spotify.com/v1/audio-features"
 
 	const [token, setToken] = useState("")
 	const [data, setData] = useState([])

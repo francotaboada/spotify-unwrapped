@@ -183,17 +183,17 @@
 
             @include media(">halfscreen") {
                 position: absolute;
-                margin-top: 650px;
+                margin-top: 625px;
                 height: 100px;
                 text-align: center;
                 padding-left: 0px;
                 position: relative;
                 
                 h1 {
-                    font-size: 40px;
+                    font-size: 35px;
                 }
                 h2 {
-                    font-size: 25px;
+                    font-size: 22px;
                     font-weight: 300;
                 }
             }
