@@ -5,6 +5,7 @@ import Intro from './components/intro/Intro';
 import TopArtists from './components/topartists/TopArtists';
 import TopTracks from './components/toptracks/TopTracks';
 import TopGenres from './components/topgenres/TopGenres';
+import About from './components/about/About';
 import axios from 'axios';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
 	const CLIENT_ID = process.env.REACT_APP_SPOTIFY_API_ID; // Your client id
 	const CLIENT_SECRET = process.env.REACT_APP_SPOTIFY_CLIENT_SECRET; // Your secret
 	const REDIRECT_URI = "https://master.d20cfdv407epjr.amplifyapp.com" //http://localhost:3000 for local instance
+//	const REDIRECT_URI = "http://localhost:3000"
 	const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize"
 	const RESPONSE_TYPE = "token"
 	const SCOPE_TYPE = "user-top-read%20user-read-private"
@@ -226,6 +228,7 @@ function App() {
 					<TopArtists topArtistsST={topArtistsST} topArtistsMT={topArtistsMT} topArtistsLT={topArtistsLT} />
 					<TopTracks topTracksST={topTracksST} topTracksMT={topTracksMT} topTracksLT={topTracksLT}/>
 					<TopGenres genres={topGenres} genreRemainder = {genreRemainder} />
+					<About/>
 				</div>
 			}
 

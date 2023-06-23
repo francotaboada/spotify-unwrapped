@@ -1,0 +1,40 @@
+.about {
+    background-color: #191414;
+    color: white;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+
+    .container {
+        height: 100%;
+        width: 50%;
+        position: relative;
+        top: 40%;
+        .left {
+            float: left;
+            width: 50%;
+
+        }
+        .right {
+            float: right;
+            width: 50%;
+            text-align: left;
+            font-size: 25px;
+            margin-top: -2px;
+        }
+
+        .imgContainer {
+            img {
+                height: 150px;
+                width: 150px;
+                filter: invert(71%) sepia(60%) saturate(3639%) hue-rotate(91deg) brightness(90%) contrast(77%);
+            }
+            
+        }
+
+        img:hover {
+            cursor: pointer;
+        }
+    }
+}
