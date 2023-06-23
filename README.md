@@ -3,8 +3,10 @@
 Using a web app developed in ReactJS to display the short-term, medium-term, and long-term artists, tracks, and genres.
 
 ## Project Setup
-[todo]
-react setup, spotify api setup
+### Spotify API Documentation
+https://developer.spotify.com/documentation/web-api
+### ReactJS
+https://react.dev/reference/react
 
 ## Technology Stack
 
