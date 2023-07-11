@@ -5,7 +5,7 @@ Using a web app developed in ReactJS to display the short-term, medium-term, and
 ## Project Setup
 ### Spotify API Documentation
 https://developer.spotify.com/documentation/web-api
-### ReactJS
+### ReactJS Documentation
 https://react.dev/reference/react
 
 ## Technology Stack
