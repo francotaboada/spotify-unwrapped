@@ -44,6 +44,8 @@ Tabs can be clicked on to select different terms, such as short (last two weeks)
 <img src="https://github.com/francotaboada/spotify-unwrapped/assets/18605940/7bb02fd1-7a60-40bb-850a-2d8baf5d5a64" alt="terms demo" width = "50%">
 
 > Each tab changes the data held in hooks to display the correct term of listening.
+### Genre Calculations
+Using the artist JSON retrieved from the Spotify API, the genre(s) of an artist are compiled to create a list from most listened to least listened based on artists in the short-term, medium-term, and long-term.
 ### Local Storage
 Spotify API user key is stored in the browser so users do not have to log in if the page is refreshed or the user has left.
 
